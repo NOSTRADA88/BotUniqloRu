@@ -8,9 +8,6 @@ from aiogram.types.web_app_info import WebAppInfo
 from keyboards.menu_button import set_main_menu
 
 logger = logging.getLogger(__name__)
-
-
-
 async def main():
     logging.basicConfig(level=logging.INFO, format=u'%(filename)s:%(lineno)d #%(levelname)-8s '
                         u'[%(asctime)s] - %(name)s - %(message)s')
@@ -56,6 +53,7 @@ async def main():
     # @dp.message_handler()
     # async def send_echo(message: types.Message):
     #     await message.reply(message.text)
+
     await set_main_menu(dp)
 
     try:
