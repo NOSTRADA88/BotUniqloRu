@@ -6,8 +6,8 @@ from environs import Env
 #DataBaseConfig also should be here -_-
 @dataclass
 class TgBot:
-        token: str # our Telegram token
-        admin_ids: list[int] # admins id list
+    token: str # our Telegram token
+    admin_ids: list[int] # admins id list
 
 @dataclass
 class Congif:
