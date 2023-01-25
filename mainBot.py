@@ -1,12 +1,11 @@
 from asyncio import new_event_loop
 
 from aiogram import Bot, Dispatcher, executor, types
-from aiogram.types import ReplyKeyboardMarkup, ReplyKeyboardRemove, KeyboardButton, KeyboardButtonPollType
-from config import load_config
+from aiogram.types import ReplyKeyboardMarkup, ReplyKeyboardRemove, KeyboardButton
+from BotUniqloRu.config import load_config
 from keyboards.menu_button import set_main_menu
 from motor.motor_asyncio import AsyncIOMotorClient
 from datetime import datetime
-import asyncio
 
 config = load_config('.env')
 
